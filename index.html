@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>🎮 Rock Paper Scissors</h1>
+    <div class="game-container">
+      <div class="choices">
+        <div class="choice" id="rock" data-choice="rock">
+          <span class="emoji">🪨</span>
+          <p>Rock</p>
+        </div>
+        <div class="choice" id="paper" data-choice="paper">
+          <span class="emoji">📄</span>
+          <p>Paper</p>
+        </div>
+        <div class="choice" id="scissors" data-choice="scissors">
+          <span class="emoji">✂️</span>
+          <p>Scissors</p>
+        </div>
+      </div>
+
+      <div class="battle-area">
+        <div class="player-choice">
+          <p>You</p>
+          <div class="choice-display" id="user-choice-display">❓</div>
+        </div>
+        <div class="vs">VS</div>
+        <div class="computer-choice">
+          <p>Computer</p>
+          <div class="choice-display" id="computer-choice-display">❓</div>
+        </div>
+      </div>
+
+      <div class="score-board">
+        <div class="score user">
+          <p class="score-label">You</p>
+          <p class="score-value" id="user-score">0</p>
+        </div>
+        <div class="score-divider">-</div>
+        <div class="score computer">
+          <p class="score-label">Computer</p>
+          <p class="score-value" id="computer-score">0</p>
+        </div>
+      </div>
+
+      <div class="msg-container">
+        <p id="msg">Choose Your Move!</p>
+      </div>
+
+      <div class="controls">
+        <button id="reset-btn">🔄 Reset Game</button>
+        <button id="reset-round-btn">↩️ New Round</button>
+      </div>
+
+      <div class="stats">
+        <p>Games Played: <span id="games-played">0</span></p>
+        <p>Win Rate: <span id="win-rate">0%</span></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
